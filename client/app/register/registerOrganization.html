@@ -1,0 +1,33 @@
+<link rel='stylesheet' href='app/register/register.css'>
+
+<h1 class='text-center headerTopMargin'> Register for flo </h1>
+
+<div class='col col-md-6 col-md-offset-3'>
+  <form id='registerForm'>
+    <div class='form-group'>
+      <input type='email' class='form-control' ng-model='user.email' placeholder='Email'>
+      <input type='text' class='form-control' ng-model='user.firstName' placeholder='First Name'>
+      <input type='text' class='form-control' ng-model='user.lastName' placeholder='Last Name'>
+      <input type='password' class='form-control' ng-model='user.password' placeholder='Password'>
+      <input type='password' class='form-control' ng-model='password2' placeholder='Confirm Password'>
+    </div>
+    <div class='form-group text-center'>
+      <input type='text' class='form-control' ng-model='organization.name' placeholder='Organization/Company Name'><br>
+      <label for='tierSize'>Choose your Organization Size Plan</label>
+      <select id='tierSize' ng-model='organization.sizeTier' class='form-control right'>
+        <option value selected disabled>Organization Tier Size</option>
+        <option value='10'>2-10</option>
+        <option value='50'>11-50</option>
+        <option value='100'>51-100</option>
+        <option value='500'>101-500</option>
+        <option value='501'>501+</option>
+      </select>
+      <!-- <sup>
+        <a href='#infoIcon'><i id='infoIcon' class="fa fa-info-circle"></i></a>
+      </sup> -->
+    </div>
+    <div class='form-group'>
+      <button ng-click='register(user)' class='btn btn-primary form-control'>Register</button>
+    </div>
+  </form>
+</div>

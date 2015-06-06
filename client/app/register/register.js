@@ -6,9 +6,15 @@ angular.module('flo')
 
   $stateProvider
 
-  .state('register', {
+  .state('registerIndividual', {
     url: '/register',
-    templateUrl: 'app/register/register.html',
+    templateUrl: 'app/register/registerIndividual.html',
+    controller: 'RegisterCtrl'
+  })
+
+  .state('registerOrganization', {
+    url: '/registerOrganization',
+    templateUrl: 'app/register/registerOrganization.html',
     controller: 'RegisterCtrl'
   });
 

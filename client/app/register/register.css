@@ -8,7 +8,7 @@ body * {
 }
 
 #registerForm {
-  margin-top: 8em;
+  margin-top: 7em;
 }
 
 #registerForm input {
@@ -26,11 +26,26 @@ input {
 }
 
 .headerTopMargin {
-  margin-top: 4em;
+  margin-top: 3em;
 }
 
 h1 {
   color: white;
   font-weight: 100;
-
 }
+
+select {
+  font-size: 2em;
+}
+
+option {
+  font-size: 2em;
+}
+
+.right {
+  text-align: right;
+}
+
+/*#infoIcon {
+  font-size: 1em;
+}*/
