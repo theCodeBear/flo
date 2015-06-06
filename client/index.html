@@ -8,10 +8,14 @@
 </head>
 <body ng-app='flo'>
 
+  <div ng-include="'/app/navbar/navbar.html'" ng-controller='NavbarCtrl'></div>
+
   <div ui-view></div>
 
   <!-- Libraries -->
   <script src='bower_components/angular-ui-router/release/angular-ui-router.min.js'></script>
+  <script src='bower_components/jquery/dist/jquery.min.js'></script>
+  <script src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
 
   <!-- Angular ui-router files -->
   <script src='index.js'></script>
