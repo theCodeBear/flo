@@ -1,0 +1,67 @@
+/* Put app-wide CSS styles here */
+
+button:focus {
+  outline: 0 !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+.navbar-default .navbar-brand {
+  color: black;
+  font-size: 3em;
+}
+
+.whiteOnBlack {
+  background-color: black;
+  color: white;
+}
+
+.blackOnGray {
+  background-color: #AAA;
+  color: black;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.smallPadding {
+  padding: 2em;
+}
+
+.bottomBorderThick {
+  border-bottom: 5px solid black;
+}
+
+.sideBordersThin {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 0 1em 1em 1em;
+  font-weight: 100 !important;
+}
+
+.footer {
+  padding-top: 2em;
+  padding-bottom: 1em;
+}

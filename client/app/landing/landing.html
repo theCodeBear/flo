@@ -1,4 +1,321 @@
-<h2>On the landing page</h2>
+<!-- <h2>On the landing page</h2> -->
+<!-- <a ui-sref='users'>Go to Users Page</a> -->
+<style>
+  html {
+    overflow-x: hidden;
+  }
+  body * {
+    /*border: 1px solid red;*/
+  }
+  .landingPageRow {
+    font-size: 3em;
+    color: white;
+    background: url('http://www.publicdomainpictures.net/pictures/30000/nahled/blue-sky-1330598792xLu.jpg');
+    background-size: cover;
+  }
+  #landingPageRow2 {
+    padding: 5em 0 8em 0;
+    background-color: #111;
+    color: #BBB;
+  }
+  #landingPageRow3 {
+    padding: 3em 0 7em 0;
+    color: black;
+  }
+  .topPadding {
+    padding-top: 7em;
+  }
+  .topPaddingSmall {
+    padding-top: 1em;
+  }
+  .topPaddingMedium {
+    padding-top: 2em;
+  }
+  .priceSignupButton {
+    margin-top: 1em;
+    width: 50%;
+  }
+  .sidePadding {
+    padding: 0em 2em 0em 2em;
+  }
+  .thinFont {
+    font-weight: 100;
+  }
+  .headerText {
+    font-size: 3em;
+    padding-bottom: 1em;
+    text-decoration: underline;
+  }
+  .translucentBackground {
+    background-color: rgba(255,255,255,0.4);
+    border: none;
+    border-radius: 0;
+  }
+  #tryItRow {
+    padding-bottom: 3em;
+    padding-top: 8em;
+  }
+  #tryItButton {
+    background-color: green;
+  }
+  #signUp {
+    /*padding-top: 1em;*/
+  }
+  #signUp ::-webkit-input-placeholder {
+    color: #333;
+  }
+  #signUp :-moz-placeholder { /* Firefox 18- */
+    color: #333;  
+  }
+  #signUp ::-moz-placeholder {  /* Firefox 19+ */
+    color: #333;  
+  }
+  #signUp :-ms-input-placeholder {  
+    color: #333;  
+  }
+  #unixQuote * {
+    padding-left: 2em;
+    padding-right: 3em;
+  }
+  #siteMap {
+    padding: 1em;
+    font-size: 1.2em;
+    padding-top: 4em;
+    /*border: 1px solid orange;*/
+  }
+  #siteMap div {
+    /*border: 1px solid green;*/
+    /*margin-bottom: 1em;*/
+  }
+  #siteMap a {
+    color: white;
+  }
+  #infoIcon {
+    font-size: 0.4em;
+  }
+  #featureDescriptions {
+    height: 20em;
+  }
+  .featureDescription {
+    height: 20em;
+  }
+</style>
+
+<!-- SIGN UP SECTION -->
+<div class='row landingPageRow topPadding'>
+  <div class='col col-md-7'>
+    <p class='text-center sidePadding thinFont'>
+      Streamlining project workflows for individuals and companies.
+    </p>
+  </div>
+  <div class='col col-md-5'>
+    <form id='signUp' name='signupForm' class='sidePadding'>
+      <div class='form-group'>
+        <input type='email' class='form-control translucentBackground text-center' name='signupEmail' placeholder='Email' required>
+        <input type='password' class='form-control translucentBackground text-center' name='signupPword' placeholder='Password' required>
+        <input type='password' class='form-control translucentBackground text-center' name='signupPword2' placeholder='Confirm Password' required>
+        <div class='text-center'>
+          <button type='submit' class='btn btn-default form-control'>Sign Up</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div id='tryItRow' class='row topPadding'>
+    <div class='col col-md-12 text-center'>
+      <button id='tryItButton' class='btn btn-success btn-lg'>Try It Without Signing Up</button>
+    </div>
+  </div>
+</div>
+
+<!-- BUZZ WORDS ROW -->
+<div id='landingPageRow2' class='row'>
+  <div class='col col-md-4 text-center'>
+    <h1 class='headerText thinFont'> Simple </h1>
+    <p class='h3 sidePadding'>
+      Simple enough to use for your personal project
+    </p>
+  </div>
+  <div class='col col-md-4 text-center'>
+    <h1 class='headerText thinFont'> Serious </h1>
+    <p class='h3 sidePadding'>
+      Serious enough for your company's grand scale
+    </p>
+  </div>
+  <div class='col col-md-4 text-center'>
+    <h1 class='headerText thinFont'> Intuitive </h1>
+    <p class='h3 sidePadding'>
+      Built with a design-first strategy, made for ease of use. Taking the confusion out of collaboration.
+    </p>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div class='row text-center'>
+  <div class='row'>
+    <h1 class='thinFont topPaddingSmall'>Features</h1>
+  </div>
+
+  <!-- FEATURE TITLES -->
+  <div class='row whiteOnBlack noMargin'>
+    <div class='col col-md-3'>
+      <h2 class='thinFont'> Manage Tasks </h2>
+    </div>
+    <div class='col col-md-3'>
+      <h2 class='thinFont'> Communicate </h2>
+    </div>
+    <div class='col col-md-3'>
+      <h2 class='thinFont'> Schedule </h2>
+    </div>
+    <div class='col col-md-3'>
+      <h2 class='thinFont'> Analytics </h2>
+    </div>
+  </div>
+
+  <!-- FEATURE DESCRIPTIONS -->
+  <div id='featureDescriptions' class='row bottomBorderThick noMargin'>
+    <div class='col col-md-3 noPadding sideBordersThin featureDescription'>
+      <p class='h3 smallPadding topPaddingMedium noMargin'>
+        Create and assign tasks to workers in fluid categorization system
+      </p>
+    </div>
+    <div class='col col-md-3 noPadding sideBordersThin featureDescription'>
+      <p class='h3 smallPadding topPaddingMedium noMargin'>
+        Use our built-in communication tool, floChat, to make your team more collaborative than ever
+      </p>
+    </div>
+    <div class='col col-md-3 noPadding sideBordersThin featureDescription'>
+      <p class='h3 smallPadding topPaddingMedium noMargin'>
+        Keep track of the schedule with our custom floTime scheduler
+      </p>
+    </div>
+    <div class='col col-md-3 noPadding sideBordersThin featureDescription'>
+      <p class='h3 smallPadding topPaddingMedium noMargin'>
+        Parse your workflow data with our floCharts analytics to create a more efficient work place
+      </p>
+    </div>
+  </div>
 
 
-<a ui-sref='users'>Go to Users Page</a>
+  <!-- <div class='row'>
+    <div class='col col-md-3 noPadding'>
+      <h2 class='whiteOnBlack noMargin smallPadding thinFont'> Manage Tasks </h2>
+      <p class='h4 noMargin  smallPadding'>
+        Create and assign tasks to workers in fluid categorization system
+      </p>
+    </div>
+    <div class='col col-md-3 noPadding'>
+      <h2 class='whiteOnBlack noMargin smallPadding thinFont'> Communicate </h2>
+      <p class='h4 noMargin  smallPadding'>
+        Use our built-in communication tool, flochat, to make your team more collaborative than ever
+      </p>
+    </div>
+    <div class='col col-md-3 noPadding'>
+      <h2 class='whiteOnBlack noMargin smallPadding thinFont'> Manage Tasks </h2>
+      <p class='h4 noMargin  smallPadding'>
+        Create and assign tasks to workers in fluid categorization system
+      </p>
+    </div>
+    <div class='col col-md-3 noPadding'>
+      <h2 class='whiteOnBlack noMargin smallPadding thinFont'> Manage Tasks </h2>
+      <p class='h4 noMargin  smallPadding'>
+        Create and assign tasks to workers in fluid categorization system
+      </p>
+    </div>
+  </div> -->
+</div>
+
+<!-- PRICING OPTIONS -->
+<div id='landingPageRow3' class='row'>
+  <div class='h1 col col-md-12 text-center thinFont'>
+    Pricing <sup><a href='#/infoModal'><i id='infoIcon' class="fa fa-info-circle"></i></sup></a>
+  </div>
+  <div class='col col-md-2 text-center'>
+    <h3> Individual </h3>
+    <p class='h2 thinFont'>
+      Free
+    </p>
+    <button class='btn btn-primary priceSignupButton'>Sign up</button>
+  </div>
+  <div class='col col-md-2 text-center'>
+    <h3> 2 - 10 Users </h3>
+    <p class='h2 thinFont'>
+      $10 / month
+    </p>
+    <button class='btn btn-primary priceSignupButton'>Sign up</button>
+  </div>
+  <div class='col col-md-2 text-center'>
+    <h3> 11 - 50 Users </h3>
+    <p class='h2 thinFont'>
+      $50 / month
+    </p>
+    <button class='btn btn-primary priceSignupButton'>Sign up</button>
+  </div>
+  <div class='col col-md-2 text-center'>
+    <h3> 51 - 100 Users </h3>
+    <p class='h2 thinFont'>
+      $100 / month
+    </p>
+    <button class='btn btn-primary priceSignupButton'>Sign up</button>
+  </div>
+  <div class='col col-md-2 text-center'>
+    <h3> 101 - 500 Users </h3>
+    <p class='h2 thinFont'>
+      $300 / month
+    </p>
+    <button class='btn btn-primary priceSignupButton'>Sign up</button>
+  </div>
+  <div class='col col-md-2 text-center'>
+    <h3> 501+ Users </h3>
+    <p class='h2 thinFont'>
+      $500 / month
+    </p>
+    <button class='btn btn-primary priceSignupButton'>Sign up</button>
+  </div>
+</div>
+
+<!-- APP FLOWCHART -->
+<!-- <div class='row text-center'>
+  <div class='col col-md-3'>
+    <p> Start a Project </p>
+  </div>
+  <div class='col col-md-3'>
+    <p> Create and Assign Tasks </p>
+  </div>
+  <div class='col col-md-3'>
+    <p> Outline and View Schedule </p>
+  </div>
+  <div class='col col-md-3'>
+    <p> Collaborate and Communicate </p>
+  </div>
+</div> -->
+
+<footer class='row text-center'>
+  <div class='row'>
+    <div id='unixQuote'class='col col-md-4 footer'>
+      <p class='h3 text-left'>
+        Do one thing and do it well.
+      </p>
+      <p class='text-right'>
+        - the UNIX Philosophy
+      </p>
+    </div>
+    <div class='col col-md-4'></div>
+    <div id='siteMap' class='col col-md-3'>
+      <div class='col col-md-4'>
+        <a href='#'>About</a>
+      </div>
+      <div class='col col-md-4'>
+        <a href='#'>FAQ</a>
+      </div>
+      <div class='col col-md-4'>
+        <a href='#'>Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col col-md-12'>
+      Created by Todd Kronenberg<br>
+      Updated June 2015
+    </div>
+  </div>
+</footer>
