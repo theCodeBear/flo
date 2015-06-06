@@ -1,0 +1,36 @@
+body {
+  background: url('http://freebigpictures.com/wp-content/uploads/2009/09/river-flow.jpg') no-repeat center center fixed;
+  background: cover;
+}
+
+body * {
+  /*border: 1px solid red;*/
+}
+
+#registerForm {
+  margin-top: 8em;
+}
+
+#registerForm input {
+  font-size: 2em;
+  height: 2em;
+}
+
+#registerForm button {
+  font-size: 2em;
+  height: 2em;
+}
+
+input {
+  text-align: center;
+}
+
+.headerTopMargin {
+  margin-top: 4em;
+}
+
+h1 {
+  color: white;
+  font-weight: 100;
+
+}

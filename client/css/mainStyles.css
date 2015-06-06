@@ -17,6 +17,10 @@ a:visited {
   font-size: 3em;
 }
 
+.thinFont {
+  font-weight: 100;
+}
+
 .whiteOnBlack {
   background-color: black;
   color: white;
