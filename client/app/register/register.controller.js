@@ -2,7 +2,7 @@
 
 angular.module('flo')
 
-.controller('RegisterCtrl', function($scope, $location) {
+.controller('RegisterCtrl', function($scope, $location, $state) {
 
   $scope.user = {};
   $scope.organization = {}
@@ -11,8 +11,12 @@ angular.module('flo')
   $location.url($location.path());
 
 
-  $scope.register = function(user) {
-    console.log(user);
+  $scope.registerUser = function() {
+    $state.go('dashboard');
+  };
+
+  $scope.registerOrganization = function() {
+    $state.go('dashboard');
   };
 
 });

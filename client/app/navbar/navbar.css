@@ -1,0 +1,71 @@
+.ball {
+  border-radius: 50%;
+  border: none;
+  position: fixed;
+  z-index: 99;
+}
+
+.ball:hover {
+  color: white !important;
+}
+
+#floBall {
+  background-color: red;
+  top: 20px;
+  height: 75px;
+  width: 75px;
+  font-size: 3em;
+  left: 20px;
+}
+
+.menuBalls {
+  height: 75px;
+  width: 75px;
+  font-size: 3em;
+  left: 20px;
+  z-index: 1;
+  top: 20px;
+  /*display: none;*/
+}
+
+/*Dashboard menu balls*/
+#overviewBall {  }
+#scrumBall {  }
+#scheduleBall {  }
+#chatBall {  }
+#chartBall {  }
+
+/*Landing page menu balls*/
+#aboutBall {  }
+#faqBall {  }
+#contactBall {  }
+#helpBall {  }
+
+
+#loginBall {
+  background-color: green;
+  height: 50px;
+  width: 50px;
+  top: 30px;
+  right: 20px;
+  color: white;
+}
+
+#loginBall:hover {
+  color: black !important;
+}
+
+#loginForm {
+  position: fixed;
+  z-index: 99;
+  right: 80px;
+  margin-top: 40px;
+  display: none;
+}
+
+#userBall {
+  height: 50px;
+  width: 50px;
+  top: 30px;
+  right: 20px;
+}
