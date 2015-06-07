@@ -10,10 +10,9 @@ angular.module('flo')
       elem.bind('click', function() {
         if (!scope.menuOpen) {
           scope.menuOpen = true;
-          $('#homeBall').animate({top: '120px', 'z-index': '98'});
-          $('#aboutBall').animate({top: '220px', 'z-index': '98'});
-          $('#faqBall').animate({top: '320px', 'z-index': '98'});
-          $('#contactBall').animate({top: '420px', 'z-index': '98'});
+          $('#aboutBall').animate({top: '120px', 'z-index': '98'});
+          $('#faqBall').animate({top: '220px', 'z-index': '98'});
+          $('#contactBall').animate({top: '320px', 'z-index': '98'});
         } else {
           scope.menuOpen = false;
           $('#homeBall').animate({top: '20px', 'z-index': '1'});
