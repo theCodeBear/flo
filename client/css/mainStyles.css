@@ -67,6 +67,15 @@ a:visited {
   /*background-color: transparent;*/
 }
 
+.btn.btn-link {
+  text-decoration: none;
+  color: white;
+}
+
+.btn.btn-link:hover {
+  color: white;
+}
+
 footer {
   background-color: black;
   color: white;
@@ -77,4 +86,24 @@ footer {
 .footer {
   padding-top: 2em;
   padding-bottom: 1em;
+}
+
+.blur {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+.modalClose {
+  margin-top: 50px;
+}
+
+.modalCloseButton {
+  color: white;
+  padding: 0;
+}
+.modalCloseButton:hover {
+  color: white;
+}
+modalCloseButton:active {
+  color: white;
 }

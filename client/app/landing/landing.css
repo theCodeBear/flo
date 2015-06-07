@@ -1,94 +1,132 @@
 body * {
-    /*border: 1px solid red;*/
-  }
-  .landingPageRow {
-    font-size: 3em;
-    color: white;
-    background: url('http://www.publicdomainpictures.net/pictures/30000/nahled/blue-sky-1330598792xLu.jpg');
-    background-size: cover;
-  }
-  #landingPageRow2 {
-    padding: 5em 0 8em 0;
-    background-color: #111;
-    color: #BBB;
-  }
-  #landingPageRow3 {
-    padding: 3em 0 7em 0;
-    color: black;
-  }
-  .topPadding {
-    padding-top: 7em;
-  }
-  .topPaddingSmall {
-    padding-top: 1em;
-  }
-  .topPaddingMedium {
-    padding-top: 2em;
-  }
-  .priceSignupButton {
-    margin-top: 1em;
-    width: 50%;
-  }
-  .sidePadding {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-  .headerText {
-    font-size: 3em;
-    padding-bottom: 1em;
-    text-decoration: underline;
-  }
-  .translucentBackground {
-    background-color: rgba(255,255,255,0.4);
-    border: none;
-    border-radius: 0;
-  }
-  #tryItRow {
-    padding-bottom: 3em;
-    padding-top: 8em;
-  }
-  #tryItButton {
-    background-color: green;
-  }
-  #infoIcon {
-    font-size: 0.4em;
-  }
-  #signUp {
-    /*padding-top: 1em;*/
-  }
-  #signUp ::-webkit-input-placeholder {
-    color: #333;
-  }
-  #signUp :-moz-placeholder { /* Firefox 18- */
-    color: #333;  
-  }
-  #signUp ::-moz-placeholder {  /* Firefox 19+ */
-    color: #333;  
-  }
-  #signUp :-ms-input-placeholder {  
-    color: #333;  
-  }
-  #unixQuote * {
-    padding-left: 2em;
-    padding-right: 3em;
-  }
-  #siteMap {
-    padding: 1em;
-    font-size: 1.2em;
-    padding-top: 4em;
-    /*border: 1px solid orange;*/
-  }
-  #siteMap div {
-    /*border: 1px solid green;*/
-    /*margin-bottom: 1em;*/
-  }
-  #siteMap a {
-    color: white;
-  }
+  /*border: 1px solid red;*/
+}
+.landingPageRow {
+  font-size: 3em;
+  color: white;
+  background: url('http://www.publicdomainpictures.net/pictures/30000/nahled/blue-sky-1330598792xLu.jpg');
+  background-size: cover;
+}
+#landingPageRow2 {
+  padding: 5em 0 8em 0;
+  background-color: #111;
+  color: #BBB;
+}
+#landingPageRow3 {
+  padding: 3em 0 7em 0;
+  color: black;
+}
+.topPadding {
+  padding-top: 7em;
+}
+.topPaddingSmall {
+  padding-top: 1em;
+}
+.topPaddingMedium {
+  padding-top: 2em;
+}
+.priceSignupButton {
+  margin-top: 1em;
+  width: 50%;
+}
+.sidePadding {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.headerText {
+  font-size: 3em;
+  padding-bottom: 1em;
+  text-decoration: underline;
+}
+.translucentBackground {
+  background-color: rgba(255,255,255,0.4);
+  border: none;
+  border-radius: 0;
+}
+#tryItRow {
+  padding-bottom: 3em;
+  padding-top: 8em;
+}
+#tryItButton {
+  background-color: green;
+}
+#infoIcon {
+  font-size: 0.4em;
+}
+#signUp {
+  /*padding-top: 1em;*/
+}
+#signUp ::-webkit-input-placeholder {
+  color: #333;
+}
+#signUp :-moz-placeholder { /* Firefox 18- */
+  color: #333;  
+}
+#signUp ::-moz-placeholder {  /* Firefox 19+ */
+  color: #333;  
+}
+#signUp :-ms-input-placeholder {  
+  color: #333;  
+}
+#unixQuote * {
+  padding-left: 2em;
+  padding-right: 3em;
+}
+#siteMap {
+  padding: 1em;
+  font-size: 1.2em;
+  padding-top: 4em;
+  /*border: 1px solid orange;*/
+}
+#siteMap div {
+  /*border: 1px solid green;*/
+  /*margin-bottom: 1em;*/
+}
+#siteMap a {
+  color: white;
+}
 
-  #featureDescriptions {
-    height: 20em;
-  }
-  .featureDescription {
-    height: 20em;
-  }
+#featureDescriptions {
+  height: 20em;
+}
+.featureDescription {
+  height: 20em;
+}
+
+
+
+/*About Section*/
+#aboutSection {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.85);
+  z-index: 100;
+  color: white;
+}
+
+/*FAQ Section*/
+#faqSection {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.85);
+  z-index: 100;
+  color: white;
+}
+
+/*Contact Section*/
+#contactSection {
+  display: none;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.85);
+  z-index: 100;
+  color: white;
+}
