@@ -56,6 +56,15 @@ body * {
 #signUp {
   /*padding-top: 1em;*/
 }
+
+.tierName {
+  height: 1.5em;
+}
+
+.tierPrice {
+  height: 1.5em;
+}
+
 #signUp ::-webkit-input-placeholder {
   color: #333;
 }
@@ -129,4 +138,12 @@ body * {
   background-color: rgba(0,0,0,0.85);
   z-index: 100;
   color: white;
+}
+
+#contactForm input {
+  margin-bottom: 1em;
+}
+
+#emailMessage {
+  height: 200px;
 }

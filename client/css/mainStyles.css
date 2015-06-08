@@ -25,6 +25,14 @@ a:visited {
   font-weight: 100;
 }
 
+.largeFont {
+  font-size: 3em;
+}
+
+.xLargeFont {
+  font-size: 4em;
+}
+
 .whiteOnBlack {
   background-color: black;
   color: white;

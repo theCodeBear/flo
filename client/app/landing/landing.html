@@ -54,7 +54,7 @@
   <!-- FEATURES -->
   <div class='row text-center'>
     <div class='row'>
-      <h1 class='thinFont topPaddingSmall'>Features</h1>
+      <div class='thinFont xLargeFont topPaddingSmall'>Features</div>
     </div>
 
     <!-- FEATURE TITLES -->
@@ -100,47 +100,47 @@
 
   <!-- PRICING OPTIONS -->
   <div id='landingPageRow3' class='row'>
-    <div class='h1 col col-md-12 text-center thinFont'>
+    <div class='col col-md-12 text-center thinFont xLargeFont'>
       Pricing <sup><a href='#/infoModal'><i id='infoIcon' class="fa fa-info-circle infoIcon"></i></sup></a>
     </div>
     <div class='col col-md-2 text-center'>
-      <h3> Individual </h3>
-      <p class='h2 thinFont'>
+      <h3 class='tierName'> Individual </h3>
+      <p class='h2 thinFont tierPrice'>
         Free
       </p>
       <a type='submit' class='btn btn-primary priceSignupButton form-control' href='/#/register' role='button'>Sign Up</a>
     </div>
     <div class='col col-md-2 text-center'>
-      <h3> 2 - 10 Users </h3>
-      <p class='h2 thinFont'>
+      <h3 class='tierName'> 2 - 10 Users </h3>
+      <p class='h2 thinFont tierPrice'>
         $10 / month
       </p>
       <a type='submit' class='btn btn-primary priceSignupButton form-control' href='/#/registerOrganization?size=10' role='button'>Sign Up</a>
     </div>
     <div class='col col-md-2 text-center'>
-      <h3> 11 - 50 Users </h3>
-      <p class='h2 thinFont'>
+      <h3 class='tierName'> 11 - 50 Users </h3>
+      <p class='h2 thinFont tierPrice'>
         $50 / month
       </p>
       <a type='submit' class='btn btn-primary priceSignupButton form-control' href='/#/registerOrganization?size=50' role='button'>Sign Up</a>
     </div>
     <div class='col col-md-2 text-center'>
-      <h3> 51 - 100 Users </h3>
-      <p class='h2 thinFont'>
+      <h3 class='tierName'> 51 - 100 Users </h3>
+      <p class='h2 thinFont tierPrice'>
         $100 / month
       </p>
       <a type='submit' class='btn btn-primary priceSignupButton form-control' href='/#/registerOrganization?size=100' role='button'>Sign Up</a>
     </div>
     <div class='col col-md-2 text-center'>
-      <h3> 101 - 500 Users </h3>
-      <p class='h2 thinFont'>
+      <h3 class='tierName'> 101 - 500 Users </h3>
+      <p class='h2 thinFont tierPrice'>
         $300 / month
       </p>
       <a type='submit' class='btn btn-primary priceSignupButton form-control' href='/#/registerOrganization?size=500' role='button'>Sign Up</a>
     </div>
     <div class='col col-md-2 text-center'>
-      <h3> 501+ Users </h3>
-      <p class='h2 thinFont'>
+      <h3 class='tierName'> 501+ Users </h3>
+      <p class='h2 thinFont tierPrice'>
         $500 / month
       </p>
       <a type='submit' class='btn btn-primary priceSignupButton form-control' href='/#/registerOrganization?size=501' role='button'>Sign Up</a>
@@ -202,7 +202,7 @@
       <button toggle-modal class='btn btn-link modalCloseButton' data-section='#aboutSection' data-blurId='#landingPage'><i class="fa fa-times fa-2x"></i></button>
     </div>
   </div>
-  <div class='h1 col col-md-12 text-center'>Learn About flo</div>
+  <div class='col col-md-12 text-center largeFont thinFont'>Learn About flo</div>
   <div class='row'>
     <div class='col col-md-6 col-md-offset-3'>
       <p>
@@ -227,7 +227,7 @@
       <button toggle-modal class='btn btn-link modalCloseButton' data-section='#faqSection' data-blurId='#landingPage'><i class="fa fa-times fa-2x"></i></button>
     </div>
   </div>
-  <div class='h1 col col-md-12 text-center'>Frequently Asked Questions</div>
+  <div class='h1 col col-md-12 text-center largeFont thinFont'>Frequently Asked Questions</div>
   <div class='row'>
     <div class='col col-md-6 col-md-offset-3'>
       <p> What is flo? </p>
@@ -250,12 +250,12 @@
       <button toggle-modal class='btn btn-link modalCloseButton' data-section='#contactSection' data-blurId='#landingPage'><i class="fa fa-times fa-2x"></i></button>
     </div>
   </div>
-  <div class='h1 col col-md-12 text-center'>Contact Form</div>
-  <form class='col col-md-4 col-md-offset-4'>
+  <div class='h1 col col-md-12 text-center largeFont thinFont'>Contact Form</div>
+  <form id='contactForm' class='col col-md-4 col-md-offset-4'>
     <div class='form-group'>
       <input type='email' name='from' class='form-control' placeholder='Your Email'>
       <input type='text' name='name' class='form-control' placeholder='Full Name'>
-      <textarea class='form-control' placeholder='Your Message'></textarea>
+      <textarea id='emailMessage' class='form-control' placeholder='Your Message'></textarea>
     </div>
     <button type='submit' class='btn btn-primary col-md-12'>Send Email</button>
   </form>
