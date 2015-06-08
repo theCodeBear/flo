@@ -5,6 +5,7 @@ angular.module('flo')
 .controller('NavbarCtrl', function($scope) {
 
   $scope.menuOpen = false;
+  $scope.userMenuOpen = false;
 
 
 });

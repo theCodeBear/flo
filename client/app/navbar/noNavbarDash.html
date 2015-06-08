@@ -4,13 +4,18 @@
 <button flo-dashball id='floBall' class='ball thinFont'>flo</button>
 
 <!-- Toggled Balls from Flo Ball -->
-<button id='overviewBall' ui-sref='home' class='ball thinFont menuBalls'><i class="fa fa-home"></i></button>
-<button id='scrumBall' ui-sref='scrumBoard' class='ball thinFont menuBalls'><i class="fa fa-table"></i></button>
-<button id='scheduleBall' ui-sref='floTime' class='ball thinFont menuBalls'><i class="fa fa-clock-o"></i></button>
-<button id='chatBall' ui-sref='floChat' class='ball thinFont menuBalls'><i class="fa fa-comments"></i></button>
-<button id='chartBall' ui-sref='floCharts' class='ball thinFont menuBalls'><i class="fa fa-pie-chart"></i></button>
+<button id='overviewBall' ui-sref='home' class='ball thinFont menuBalls' data-toggle='tooltip' data-placement='left' title='Home'><i class="fa fa-home"></i></button>
+<button id='scrumBall' ui-sref='scrumBoard' class='ball thinFont menuBalls' data-toggle='tooltip' data-placement='left' title='Scrum Board'><i class="fa fa-table"></i></button>
+<button id='scheduleBall' ui-sref='floTime' class='ball thinFont menuBalls' data-toggle='tooltip' data-placement='left' title='floTime'><i class="fa fa-clock-o"></i></button>
+<button id='chatBall' ui-sref='floChat' class='ball thinFont menuBalls' data-toggle='tooltip' data-placement='left' title='floChat'><i class="fa fa-comments"></i></button>
+<button id='chartBall' ui-sref='floCharts' class='ball thinFont menuBalls' data-toggle='tooltip' data-placement='left' title='floCharts'><i class="fa fa-pie-chart"></i></button>
 
 
 
 <!-- User Ball -->
-<button  id='userBall' class='ball thinFont'><i class="fa fa-user fa-lg"></i></button>
+<button user-ball id='userBall' class='ball thinFont'><i class="fa fa-user fa-lg"></i></button>
+
+<!-- Toggled Balls from User Ball -->
+<button id='accountBall' class='ball littleMenuBalls thinFont' data-toggle='tooltip' data-placement='left' title='Account'><i class="fa fa-user fa-lg"></i></button>
+<button id='settingsBall' class='ball littleMenuBalls thinFont' data-toggle='tooltip' data-placement='left' title='Settings'><i class="fa fa-cog fa-lg"></i></button>
+<button id='organizationsBall' class='ball littleMenuBalls thinFont' data-toggle='tooltip' data-placement='left' title='Organizations'><i class="fa fa-users fa-lg"></i></button>

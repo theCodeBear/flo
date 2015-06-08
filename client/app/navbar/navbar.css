@@ -28,12 +28,25 @@
   /*display: none;*/
 }
 
-/*Dashboard menu balls*/
+.littleMenuBalls {
+  height: 50px;
+  width: 50px;
+  right: 20px;
+  top: 30px;
+  z-index: 1;
+}
+
+/*In-app main menu balls*/
 #overviewBall {  }
 #scrumBall {  }
 #scheduleBall {  }
 #chatBall {  }
 #chartBall {  }
+
+/*User menu balls*/
+#accountBall {  }
+#settingsBall {  }
+#organizationsBall {  }
 
 /*Landing page menu balls*/
 #aboutBall {  }

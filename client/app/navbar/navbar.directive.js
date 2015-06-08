@@ -15,7 +15,6 @@ angular.module('flo')
           $('#contactBall').animate({top: '320px', 'z-index': '98'});
         } else {
           scope.menuOpen = false;
-          $('#homeBall').animate({top: '20px', 'z-index': '1'});
           $('#aboutBall').animate({top: '20px', 'z-index': '1'});
           $('#faqBall').animate({top: '20px', 'z-index': '1'});
           $('#contactBall').animate({top: '20px', 'z-index': '1'});
@@ -57,6 +56,29 @@ angular.module('flo')
           $('#chatBall').animate({top: '20px', 'z-index': '1'});
           // $('#chartBall').toggle();
           $('#chartBall').animate({top: '20px', 'z-index': '1'});
+        }
+      });
+    }
+  };
+
+})
+
+.directive('userBall', function() {
+
+  return {
+    restrict: 'A',
+    link: function(scope, elem, attrs) {
+      elem.bind('click', function() {
+        if (!scope.userMenuOpen) {
+          scope.userMenuOpen = true;
+          $('#accountBall').animate({top: '100px', 'z-index': '98'});
+          $('#settingsBall').animate({top: '170px', 'z-index': '98'});
+          $('#organizationsBall').animate({top: '240px', 'z-index': '98'});
+        } else {
+          scope.userMenuOpen = false;
+          $('#accountBall').animate({top: '30px', 'z-index': '1'});
+          $('#settingsBall').animate({top: '30px', 'z-index': '1'});
+          $('#organizationsBall').animate({top: '30px', 'z-index': '1'});
         }
       });
     }
