@@ -2,7 +2,7 @@
 
 angular.module('flo')
 
-.controller('DashCtrl', function($scope) {
+.controller('ScrumCtrl', function($scope) {
 
 
 

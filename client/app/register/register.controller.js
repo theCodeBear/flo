@@ -12,11 +12,11 @@ angular.module('flo')
 
 
   $scope.registerUser = function() {
-    $state.go('dashboard');
+    $state.go('home');
   };
 
   $scope.registerOrganization = function() {
-    $state.go('dashboard');
+    $state.go('home');
   };
 
 });
